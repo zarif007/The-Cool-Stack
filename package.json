@@ -9,9 +9,7 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
+  "format": "npx prettier --write .",
   "dependencies": {
     "@tanstack/react-query": "^4.35.3",
     "@trpc/client": "^10.38.4",
