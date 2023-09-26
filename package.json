@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo "
   },
   "format": "npx prettier --write .",
   "dependencies": {
+    "-": "^0.0.1",
     "@tanstack/react-query": "^4.35.3",
     "@trpc/client": "^10.38.4",
     "@trpc/react-query": "^10.38.4",
@@ -20,20 +23,25 @@
     "drizzle-orm": "^0.28.6",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "postcss": "latest",
-    "prettier": "3.0.3",
+    "prettier": "^3.0.3",
     "tailwindcss": "latest",
     "typescript": "latest"
   }
